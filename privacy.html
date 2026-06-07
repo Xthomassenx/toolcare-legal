@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | ToolCare</title>
+  <meta name="description" content="Privacy Policy for ToolCare by Thomassen Solutions.">
+  <style>
+:root {
+  --blue: #0D3B78;
+  --green: #2FB85A;
+  --slate: #475569;
+  --bg: #f8fafc;
+  --border: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.site-header {
+  background: var(--blue);
+  color: white;
+  padding: 24px;
+}
+.site-header__inner, main, .site-footer {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: white;
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+.nav {
+  margin-top: 14px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.nav a:hover { border-bottom-color: var(--green); }
+main {
+  padding: 32px 0;
+}
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: clamp(20px, 4vw, 40px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+h1, h2, h3 {
+  color: #0f172a;
+  line-height: 1.2;
+}
+h1 { font-size: clamp(30px, 5vw, 44px); margin-top: 0; }
+h2 { margin-top: 32px; }
+a { color: var(--blue); }
+.button {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.notice {
+  border-left: 4px solid var(--green);
+  background: #f0fdf4;
+  padding: 16px;
+  border-radius: 12px;
+}
+.site-footer {
+  color: var(--slate);
+  padding: 24px 0 40px;
+  font-size: 14px;
+}
+.termly-policy [data-custom-class='body'] {
+  max-width: 100%;
+}
+.termly-policy table {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+.termly-policy h1, .termly-policy h2, .termly-policy h3 {
+  color: #0f172a !important;
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand"><span class="brand-mark">T</span><span>ToolCare</span></div>
+      <nav class="nav" aria-label="Legal pages">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./account-deletion.html">Account Deletion</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+
+      <div class="termly-policy">
+Here is the complete handover for a new AI instance. Copy/paste everything inside the block. ```txt # Handover — ToolCare / Tool Maintenance App / Expo Router / Supabase ## User preference - User wants direct, practical help. - User prefers Git patch workflow. - User does NOT want huge copy/paste code blocks unless absolutely necessary. - Preferred workflow: 1. User makes sure Git is clean. 2. User creates/upload fresh source zip. 3. Assistant inspects zip. 4. Assistant returns downloadable `.patch` file and backup replacement zip. 5. User saves patch to Updates folder. 6. User applies patch/tests/commits/pushes. - Be very specific about exact file paths. - When modifying route files, verify first-line comment and exported component before preparing patch. - User is learning Git, so explain commands clearly when needed. - User likes hand-holding, step-by-step commands. - Avoid wrong-file confusion. ## Project root C:\Users\Bruker\TOOL\tool-maintenance-app-sdk54 ## Updates/patch folder C:\Users\Bruker\Documents\VerktøyVedlikehold\Updates Use this folder for downloaded patch/zips. Do NOT put update files in the project root unless necessary. ## GitHub Remote repo: https://github.com/Xthomassenx/tool-maintenance-app.git Branch: main Current expected state: - Local `main` synced with `origin/main` - Working tree clean - Latest known commit: 51cf356 set app identity to ToolCare User should confirm with: git status git log --oneline -8 ## Git workflow Before any change: git status Expected: On branch main Your branch is up to date with 'origin/main'. nothing to commit, working tree clean Apply patch safely: git apply --check --ignore-space-change --whitespace=nowarn "C:\Users\Bruker\Documents\VerktøyVedlikehold\Updates\<patch-name>.patch" git apply --ignore-space-change --whitespace=nowarn "C:\Users\Bruker\Documents\VerktøyVedlikehold\Updates\<patch-name>.patch" git status Test: npm run lint npx expo-doctor npx expo start --web -c --port 19007 Commit/push if good: git add . git commit -m "<clear message>" git push git status Undo before commit if a patch fails badly: git apply -R --whitespace=nowarn "C:\Users\Bruker\Documents\VerktøyVedlikehold\Updates\<patch-name>.patch" git status For PowerShell paths with `[customerId]` or `[toolId]`, use: Get-Content -LiteralPath ".\app\(app)\customers\[customerId]\tools\[toolId].tsx" ## App stack - Expo SDK 54 - Expo Router - React Native - React Native Paper - Supabase Auth - Supabase Postgres/RLS - Supabase Storage - Web testing: npx expo start --web -c --port 19007 ## Current app name / identity Chosen app name: ToolCare Configured in app.json: - display name: ToolCare - slug: toolcare - scheme: toolcare - Android package: no.dthomassen.toolcare - iOS bundle identifier: no.dthomassen.toolcare Latest app identity commit: 51cf356 set app identity to ToolCare ## Branding direction User liked the visual concept. Brand concept: - Name: ToolCare - Deep blue background - White wrench icon - Green checkmark - Clean professional B2B maintenance/service style - Tagline idea: Tool maintenance made simple Generated visual previews in prior instance: - toolcare_branding_preview.pdf - toolcare_branding_preview.html - toolcare_branding_preview.svg - original image preview had loading/status issues, PDF/HTML/SVG worked better. Next branding step: Create proper Expo production assets: - assets/images/icon.png - assets/images/adaptive-icon.png or adaptive foreground/background assets - assets/images/splash-icon.png - assets/images/favicon.png Need inspect current app.json/assets before changing icons. ## Current health status After Expo Doctor fixes: - npm run lint passed - npx expo-doctor passed 18/18 - app started normally on web - GitHub synced Important: after app identity ToolCare commit, run health check again just to confirm: npm run lint npx expo-doctor npx expo start --web -c --port 19007 ## Expo Doctor fixes already done Fixed: - Installed missing peer dependency: react-native-svg - Ran Expo package fixes - Added standard metro.config.js: const { getDefaultConfig } = require("expo/metro-config"); const config = getDefaultConfig(__dirname); module.exports = config; Expo Doctor went from 15/18 to 18/18. ## .gitignore Important ignored files/folders: node_modules/ .expo/ dist/ build/ web-build/ .env .DS_Store *.log source-code.zip code-tree.txt repo-tree.txt supabase/.temp/ .env must stay ignored. Do not commit Supabase secrets. ## Important source tree Important app routes: - app/_layout.tsx - app/index.tsx - app/sign-in.tsx - app/(app)/_layout.tsx - app/(app)/index.tsx - app/(app)/maintenance.tsx - app/(app)/settings.tsx - app/(app)/settings/account.tsx - app/(app)/settings/create-seller.tsx - app/(app)/customers/index.tsx - app/(app)/customers/new.tsx - app/(app)/customers/[customerId].tsx - app/(app)/customers/[customerId]/edit.tsx - app/(app)/customers/[customerId]/new-tool.tsx - app/(app)/customers/[customerId]/seller-access.tsx - app/(app)/customers/[customerId]/tools/[toolId].tsx - app/(app)/customers/[customerId]/tools/[toolId]/new-maintenance.tsx Important shared components now created: - components/AttachmentSection.tsx - components/AppScreen.tsx - components/AttachmentCard.tsx - components/DateField.tsx UI: - components/ui/ActionButton.tsx - components/ui/ErrorBox.tsx - components/ui/InfoBlock.tsx - components/ui/PageHeader.tsx - components/ui/StatusMetric.tsx - components/ui/ThemedBadge.tsx - components/ui/ThemedButton.tsx - components/ui/ThemedCard.tsx - components/ui/ThemedInput.tsx Screen section components: - components/app-layout/AppBottomNavigation.tsx - components/app-layout/AppStackScreens.tsx - components/app-root/AppRootProviders.tsx - components/auth/SignInSections.tsx - components/customer-detail/CustomerDetailSections.tsx - components/customer-form/CustomerFormSections.tsx - components/customer-list/CustomerListSections.tsx - components/home/HomeSections.tsx - components/maintenance-overview/MaintenanceOverviewSections.tsx - components/new-maintenance/NewMaintenanceSections.tsx - components/seller-access/SellerAccessSections.tsx - components/tool-detail/ToolDetailSections.tsx - components/tool-form/ToolFormSections.tsx Important libs/services: - lib/date-utils.ts - lib/design-tokens.ts - lib/env.ts - lib/paper-theme.ts - lib/permission-utils.ts - lib/service-status.ts - lib/supabase.ts - lib/theme.ts - lib/types.ts - services/account-service.ts - services/attachment-service.ts - services/customer-access-service.ts - services/customer-service.ts - services/maintenance-service.ts - services/permission-service.ts - services/profile-service.ts - services/seller-service.ts - services/service-overview-service.ts - services/tool-service.ts ## Refactors completed These commits were completed and pushed: - fd6b1fc refactor service status logic - 77a5bdf refactor permission logic - e91370c refactor reusable UI components - 6fbf54d refactor tool detail screen sections - fd2ef33 refactor customer detail screen sections - 41c6259 refactor new maintenance screen sections - 7e6aa16 refactor seller access screen sections - cccf520 refactor customer form screens - 73407c3 refactor new tool screen sections - 3a6d1d1 refactor customer list screen sections - 879f575 refactor maintenance overview screen sections - 8346e16 refactor home screen sections - 1fa50a6 refactor settings screens - e2e71ac refactor app layout navigation - 786e1ae refactor auth root screens - ded994c likely fix expo doctor checks - 2a4d272 clean up env helper - 52f8a70 use env helper in supabase client - 51cf356 set app identity to ToolCare There was a suggested tag: refactor-cleanup-v1 But user chose to proceed to release-readiness instead. Do not assume tag exists unless checked. ## Auth / roles Roles: - sys_admin - owner - seller - customer Profile type must include: force_password_change: boolean; Force-password/account settings flow works. Navigation rules: Customer users should only see: - Home - Settings Owner/seller/sys_admin see: - Home - Customers - Service - Settings There is a home icon/button near stack header/back navigation already working. ## RLS / Supabase warning RLS has been difficult and is currently stable. Avoid touching database/RLS unless explicitly needed. Known previous RLS issues: - infinite recursion in customers/profiles/customer_seller_permissions policies - fixes used helper functions and careful CASE gates to avoid calling helpers for roles that should not evaluate them Current working access: - Owner can create customers - Seller can create customers - Owner dashboard/tool access works - Seller customer access works - Customer access works read-only where appropriate - Permission management works ## Customer/seller access seller-access page works after refactor. Owner/sys_admin can: - link customer login - grant seller permissions - manage permission levels: - view - create_edit - delete/full access ## Maintenance overview app/(app)/maintenance.tsx exists and works for owner/seller/sys_admin. Customer users should not need Service tab. ## Attachments / files / photos Supabase Storage foundation is stable. Bucket: tool-maintenance-files Bucket is private. Table: public.attachments Fields: - id - company_id - customer_id - tool_id - maintenance_record_id - uploaded_by_user_id - bucket_name - storage_path - file_name - content_type - file_size - attachment_kind - created_at Attachment scopes: - Customer-level: customer_id set, tool_id null, maintenance_record_id null - Tool-level: customer_id + tool_id set, maintenance_record_id null - Maintenance-level: customer_id + tool_id + maintenance_record_id set Attachment service should include: - getCustomerAttachments(customerId) with .is("tool_id", null).is("maintenance_record_id", null) - getToolAttachments(toolId) with .eq("tool_id", toolId).is("maintenance_record_id", null) - getMaintenanceAttachmentsByRecordIds(recordIds) - uploadAttachment - uploadBase64Attachment - createSignedAttachmentUrl - deleteAttachment Important web/native upload rule: - Web upload must use asset.file / Blob directly - Native upload uses expo-file-system/legacy base64 + base64-arraybuffer - Do NOT use FileSystem.readAsStringAsync on web Installed packages: - expo-document-picker - expo-file-system - base64-arraybuffer Attachment UI: components/AttachmentCard.tsx works. It shows: - image preview for photos - file icons/categories for PDF/CSV/TXT/JSON/Word/Excel/images/generic - Open button - Delete button if allowed AttachmentSection exists and is used. User confirmed previews worked earlier. ## Known app behavior to preserve - Customer-level attachments upload/open/delete works. - Customer login can access read-only correctly. - Tool detail displays maintenance attachments in history. - New maintenance can select multiple files before save, save record, upload linked files, return to tool detail. - Tool-level attachments may not be heavily used by user, but code path exists. ## Common mistakes to avoid - Do not assume uploaded zip is correct based on user wording. - Inspect actual files before patching. - Verify component exports: app/(app)/customers/[customerId].tsx export default function CustomerDetailScreen() app/(app)/customers/[customerId]/tools/[toolId].tsx export default function ToolDetailScreen() app/(app)/customers/[customerId]/tools/[toolId]/new-maintenance.tsx export default function NewMaintenanceScreen() app/(app)/customers/[customerId]/seller-access.tsx export default function CustomerSellerAccessScreen() - Do not tell user to manually “replace chunks.” - Prefer patch or complete replacement file. - Do not touch RLS/database casually. - Do not create SQL unless explicitly needed. - Do not commit temporary patch/zip files. - If patch says file already exists, inspect instead of forcing. - If PowerShell cannot read paths with brackets, use -LiteralPath. ## Current release-readiness status Completed: - App renamed/configured to ToolCare - Expo Doctor fixed - GitHub backup configured - Major code cleanup/refactor complete Next recommended release-readiness work: 1. Final health check: npm run lint npx expo-doctor npx expo start --web -c --port 19007 2. Create production app assets: - icon.png - adaptive icon foreground/background - splash-icon.png - favicon.png 3. Patch app.json to use production icon/splash assets if needed. 4. Set up EAS: npx eas-cli eas login eas init eas build:configure 5. Configure EAS env vars: EXPO_PUBLIC_SUPABASE_URL EXPO_PUBLIC_SUPABASE_ANON_KEY 6. Supabase production checklist: - confirm RLS enabled on public tables - confirm storage bucket private - confirm policies tested for owner/seller/customer - confirm no service role key in frontend - check auth redirect URLs if native builds are used 7. First Android preview build. ## Suggested starting prompt for new AI instance We are continuing the ToolCare Expo/Supabase app. Git/GitHub are clean and synced. Latest known commit is 51cf356 set app identity to ToolCare. Major refactor is complete. Current goal is release-readiness: create production ToolCare icon/splash assets based on deep blue + white wrench + green checkmark branding, then patch app.json/assets safely. Use Git patch workflow. Ask me to upload a fresh source zip first, inspect files, then return downloadable patches/replacement files. Avoid touching RLS/database. ``` Recommended first message to the new instance: ```txt We are continuing from this handover. First help me verify Git is clean, then create production ToolCare icon/splash assets and patch app.json safely. ``` **a.** Start the new instance with the handover above. **b.** In the new instance, upload a fresh zip after running `git status`.
+      </div>
+
+    </section>
+  </main>
+  <footer class="site-footer">
+    © 2026 Thomassen Solutions. ToolCare is a tool maintenance application.
+  </footer>
+</body>
+</html>
