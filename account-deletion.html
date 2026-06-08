@@ -1,190 +1,177 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Account Deletion | ToolCare</title>
-  <meta name="description" content="How to request deletion of a ToolCare account and associated data.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToolCare Account Deletion</title>
+  <meta name="description" content="How to request deletion of your ToolCare account and associated data." />
   <style>
-:root {
-  --blue: #0D3B78;
-  --green: #2FB85A;
-  --slate: #475569;
-  --bg: #f8fafc;
-  --border: #e2e8f0;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: #0f172a;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-}
-.site-header {
-  background: var(--blue);
-  color: white;
-  padding: 24px;
-}
-.site-header__inner, main, .site-footer {
-  width: min(1040px, calc(100% - 32px));
-  margin: 0 auto;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 24px;
-  font-weight: 700;
-}
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: white;
-  color: var(--blue);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-}
-.nav {
-  margin-top: 14px;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.nav a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-}
-.nav a:hover { border-bottom-color: var(--green); }
-main {
-  padding: 32px 0;
-}
-.card {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: clamp(20px, 4vw, 40px);
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
-}
-h1, h2, h3 {
-  color: #0f172a;
-  line-height: 1.2;
-}
-h1 { font-size: clamp(30px, 5vw, 44px); margin-top: 0; }
-h2 { margin-top: 32px; }
-a { color: var(--blue); }
-.button {
-  display: inline-block;
-  background: var(--blue);
-  color: white;
-  padding: 12px 18px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 700;
-}
-.notice {
-  border-left: 4px solid var(--green);
-  background: #f0fdf4;
-  padding: 16px;
-  border-radius: 12px;
-}
-.site-footer {
-  color: var(--slate);
-  padding: 24px 0 40px;
-  font-size: 14px;
-}
-.termly-policy [data-custom-class='body'] {
-  max-width: 100%;
-}
-.termly-policy table {
-  max-width: 100%;
-  overflow-x: auto;
-  display: block;
-}
-.termly-policy h1, .termly-policy h2, .termly-policy h3 {
-  color: #0f172a !important;
-}
-</style>
+    :root {
+      --toolcare-blue: #0D3B78;
+      --toolcare-green: #2FB85A;
+      --toolcare-slate: #475569;
+      --page-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page-bg);
+      color: #0f172a;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--toolcare-blue);
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    main {
+      width: min(100%, 860px);
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+      padding: 28px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .quick-links a {
+      color: var(--toolcare-blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .quick-links a:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      color: var(--toolcare-blue);
+      font-weight: 700;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: var(--toolcare-green);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    footer {
+      width: min(100%, 860px);
+      margin: 0 auto;
+      padding: 0 16px 32px;
+      color: var(--toolcare-slate);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 18px;
+        border-radius: 14px;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <div class="brand"><span class="brand-mark">T</span><span>ToolCare</span></div>
-      <nav class="nav" aria-label="Legal pages">
-        <a href="./privacy.html">Privacy Policy</a>
-        <a href="./account-deletion.html">Account Deletion</a>
-      </nav>
-    </div>
+  <header>
+    <h1>ToolCare Account Deletion</h1>
+    <p>Request deletion of your ToolCare account and associated data</p>
   </header>
+
   <main>
+    <nav class="quick-links" aria-label="Legal pages">
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./cookies.html">Cookie Policy</a>
+      <a href="./account-deletion.html">Account Deletion</a>
+    </nav>
+
     <section class="card">
-
-      <h1>ToolCare Account Deletion</h1>
-      <p><strong>Last updated:</strong> June 07, 2026</p>
-
+      <h2>How to request account deletion</h2>
       <p>
-        This page explains how users can request deletion of their ToolCare account and associated data.
-        ToolCare is operated by Thomassen Solutions.
+        ToolCare users can request deletion of their account and associated ToolCare data by contacting Thomassen Solutions.
       </p>
 
-      <div class="notice">
-        <p>
-          To request deletion of your ToolCare account, email us at
-          <a href="mailto:Dthomassen@pm.me?subject=ToolCare%20account%20deletion%20request">Dthomassen@pm.me</a>
-          with the subject <strong>ToolCare account deletion request</strong>.
-        </p>
-      </div>
+      <p>
+        Send an email to <a href="mailto:Dthomassen@pm.me?subject=ToolCare%20account%20deletion%20request">Dthomassen@pm.me</a>
+        with the subject <strong>ToolCare account deletion request</strong>.
+      </p>
 
-      <h2>What to include in your request</h2>
-      <p>Please include enough information for us to identify your account:</p>
+      <p>Please include:</p>
       <ul>
-        <li>Your ToolCare login email address</li>
-        <li>Your company name, if applicable</li>
-        <li>A short confirmation that you want your ToolCare account deleted</li>
-      </ul>
-
-      <h2>What data will be deleted</h2>
-      <p>When your deletion request is verified, we will delete or anonymize personal data associated with your ToolCare account, including:</p>
-      <ul>
-        <li>Account/profile information such as name and email address</li>
-        <li>Notification preferences linked to your user account</li>
-        <li>Access permissions linked to your user account</li>
+        <li>The email address used for your ToolCare account.</li>
+        <li>Your company name, if applicable.</li>
+        <li>A short confirmation that you want your ToolCare account deleted.</li>
       </ul>
 
       <p>
-        Company, customer, tool, maintenance, and attachment records may belong to the company workspace.
-        If you are requesting deletion of a full company workspace, please state this clearly in the request.
+        We may ask you to confirm ownership of the account before deleting data.
       </p>
 
-      <h2>Data retention</h2>
+      <h2>What data may be deleted</h2>
       <p>
-        Some limited information may be retained for a reasonable period where required for legal,
-        security, backup, fraud-prevention, or accounting purposes.
+        Depending on your role and company setup, deletion may include your account profile, login access,
+        notification preferences, and personal information connected to your ToolCare account.
+      </p>
+
+      <h2>Business records and retention</h2>
+      <p>
+        ToolCare is a business maintenance app. Some customer, tool, service, maintenance, attachment, audit,
+        or company records may need to be retained by the company owner or by Thomassen Solutions where required
+        for security, legal, operational, or legitimate business reasons.
       </p>
 
       <h2>Processing time</h2>
       <p>
-        We aim to process verified deletion requests within 30 days unless applicable law requires or allows a different period.
+        We aim to respond to account deletion requests within 30 days.
       </p>
 
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:Dthomassen@pm.me">Dthomassen@pm.me</a>
-      </p>
-
-      <p>
-        You may also submit a privacy/data request using Termly's request form:
-        <a href="https://app.termly.io/dsar/52b60b47-154d-4809-bd0a-40941d93e22a" rel="noopener noreferrer">Data subject access request</a>.
-      </p>
-
+      <a class="button" href="mailto:Dthomassen@pm.me?subject=ToolCare%20account%20deletion%20request">Request account deletion</a>
     </section>
   </main>
-  <footer class="site-footer">
-    © 2026 Thomassen Solutions. ToolCare is a tool maintenance application.
+
+  <footer>
+    © 2026 Thomassen Solutions. ToolCare.
   </footer>
 </body>
 </html>

@@ -1,21 +1,27 @@
 # ToolCare Legal Pages
 
-This folder contains public legal pages for ToolCare.
+Public legal pages for ToolCare.
+
+## URLs
+
+Privacy Policy:
+https://xthomassenx.github.io/toolcare-legal/privacy.html
+
+Cookie Policy:
+https://xthomassenx.github.io/toolcare-legal/cookies.html
+
+Account Deletion:
+https://xthomassenx.github.io/toolcare-legal/account-deletion.html
 
 ## Files
 
-- `privacy.html` — Termly privacy policy HTML wrapped in a simple ToolCare page.
-- `account-deletion.html` — Google Play account deletion request page.
-- `index.html` — simple index page.
+- `privacy.html` contains the Termly-generated ToolCare Privacy Policy HTML.
+- `cookies.html` contains the Termly-generated ToolCare Cookie Policy HTML.
+- `account-deletion.html` contains the ToolCare account deletion request instructions.
+- `index.html` redirects to the privacy policy.
 
-## Recommended URLs
+Later, when `toolcare.no` is active, these pages can be moved or redirected to:
 
-Temporary GitHub Pages URLs:
-
-- `https://xthomassenx.github.io/toolcare-legal/privacy.html`
-- `https://xthomassenx.github.io/toolcare-legal/account-deletion.html`
-
-Later, when `toolcare.no` is active:
-
-- `https://toolcare.no/privacy`
-- `https://toolcare.no/account-deletion`
+- https://toolcare.no/privacy
+- https://toolcare.no/cookies
+- https://toolcare.no/account-deletion
